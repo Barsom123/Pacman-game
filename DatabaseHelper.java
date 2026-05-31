@@ -2,8 +2,8 @@ import java.sql.*;
 
 public class DatabaseHelper {
     private static final String URL = "jdbc:mysql://localhost:3306/pacman_game";
-    private static final String USERNAME = "your_local_mysql_username"; 
-    private static final String PASSWORD = "your_local_mysql_password";
+    private static final String USER = "your_local_mysql_username"; 
+    private static final String PASS = "your_local_mysql_password";
 
     public static boolean validateLogin(String username, String password) {
         String query = "SELECT COUNT(*) FROM users WHERE username=? AND password=?";
